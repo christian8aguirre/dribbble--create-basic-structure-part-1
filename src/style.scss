@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  @mixin bars {
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .App {
+    text-align: center;
+    
+    &__header {
+      background-color: #222;
+      height: 150px;
+      // padding: 20px;
+      color: white;
+      &--head{
+       @include bars   
+      }
+      &--head--body{
+          background-color: white;
+      }
+      &--head--foot{
+          background-color: #333;
+      }
+    }
+}
